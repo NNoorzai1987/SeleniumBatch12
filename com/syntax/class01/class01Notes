@@ -53,7 +53,7 @@ Disadvantages of Selenium WebDriver:
 -- No technical support
 -- no built in reports
 -- cannot test images, videos and captchas
-
+it is a
 get() vs navigate()
 -- navigate can go back, forward and refresh
 -- get() will wait for the page to fully load wheres navigate() will not

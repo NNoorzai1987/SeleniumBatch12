@@ -31,6 +31,14 @@ public class facebook {
         Thread.sleep(2000);
         driver.findElement(By.cssSelector("img[src='https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/__geKiQnSG-.png']")).click();
         Thread.sleep(5000);
+        driver.findElement(By.name("email")).sendKeys("Naveed is awesome");
+        driver.findElement(By.name("pass")).sendKeys("Ma ta janan wawa ya");
+        driver.findElement(By.name("login")).click();
+        driver.findElement(By.partialLinkText("Forgot")).click();
+        driver.findElement(By.name("email")).sendKeys("9253265445");
+        driver.findElement(By.name("did_submit")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.name("reset_action")).click();
         driver.close();
 
 

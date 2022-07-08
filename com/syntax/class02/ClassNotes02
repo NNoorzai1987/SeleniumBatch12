@@ -15,6 +15,7 @@ Document --> a simple html document which represents the page we are inspecting
 Object --> any line in HTML is considered to be an Object
 Model --> it is just a layout of the HTML
 
+
 Locator
 is an address or a position of a webelement on the webpage
 is used to locate or identify webelements on the webpage
