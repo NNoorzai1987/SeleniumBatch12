@@ -21,8 +21,4 @@ public class GetAllLinksFromEbay {
             String fullLink = link.getAttribute("href");
             if(!linkText.isEmpty()) {
                 System.out.println(linkText + "      " + fullLink);
-            }
-
-        }
-    }
-}
+            }}}}

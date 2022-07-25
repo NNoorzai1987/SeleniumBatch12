@@ -1,5 +1,4 @@
 package com.syntax.class04;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,12 +20,7 @@ public class class4Task01 {
         clickonLoging.click();
         WebElement SyntaxLogo= driver.findElement(By.cssSelector("img[alt $= 'HRM']"));
         boolean Isdisplay= SyntaxLogo.isDisplayed();
-        if(Isdisplay){
-            System.out.println("The Syntax Logo is displayed");
-        }else {
-            System.out.println("The Syntax Logo is not displayed");
-        }
+        if(Isdisplay){ System.out.println("The Syntax Logo is displayed");
+        }else {System.out.println("The Syntax Logo is not displayed");}
         Thread.sleep(5000);
-        driver.quit();
-    }
-}
+        driver.quit();}}
