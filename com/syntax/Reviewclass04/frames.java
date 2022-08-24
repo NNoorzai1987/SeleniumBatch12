@@ -1,10 +1,13 @@
 package com.syntax.Reviewclass04;
 
+import com.syntax.class07.ImplicitWaitDemo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+
+import java.util.concurrent.TimeUnit;
 
 public class frames {
     public static String url = "https://chercher.tech/practice/frames";
@@ -13,7 +16,7 @@ public class frames {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(url);
-//print the topic on the screen
+        //print the topic on the screen
         driver.switchTo().frame(0);
 //        find the desired element topic
         WebElement topic = driver.findElement(By.xpath("//b[@id='topic']"));
@@ -43,6 +46,7 @@ public class frames {
 
         WebElement checkbox = driver.findElement(By.xpath("//input[@id='a']"));
         checkbox.click();
+
 
     }
 }

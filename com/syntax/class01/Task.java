@@ -17,14 +17,14 @@ public class Task {
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.amazon.com");
         driver.manage().window().fullscreen();
-        Thread.sleep(10000);
+        Thread.sleep(2000);
         driver.navigate().to("https://www.ebay.com");
         String title = driver.getTitle();
 
         String url = driver.getCurrentUrl();
         System.out.println(title + " " + url);
         driver.manage().window().maximize();
-        Thread.sleep(299999999);
+        Thread.sleep(2000);
         driver.quit();
     }
 }

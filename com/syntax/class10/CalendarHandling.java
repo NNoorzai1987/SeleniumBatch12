@@ -42,8 +42,4 @@ public class CalendarHandling {
             String dateText = fromDate.getText();
             if(dateText.equals("15")) {
                 fromDate.click();
-                break;
-            }
-        }
-    }
-}
+                break;}}}}

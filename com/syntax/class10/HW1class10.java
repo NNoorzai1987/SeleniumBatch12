@@ -31,6 +31,7 @@ public class HW1class10 {
        Select select = new Select(ChosedMonth);select.selectByVisibleText("Apr");
        WebElement ChoseYear=driver.findElement(By.xpath("//*[@class='ui-datepicker-year']"));
        Select select2=new Select(ChoseYear);select2.selectByVisibleText("2023");
+
        List<WebElement> StartsDate = driver.findElements(By.xpath("//table[@class = 'ui-datepicker-calendar']/tbody/tr/td"));
        for(WebElement Date: StartsDate) {String dateText = Date.getText();if(dateText.equals("21")) {Date.click();break;}}
        WebElement Todate=driver.findElement(By.xpath("//input[@id='calToDate']/following-sibling::img"));Todate.click();
